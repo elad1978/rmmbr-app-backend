@@ -56,6 +56,7 @@ app.get("/api/users", (req, res) => {
   res.json(users);
 });
 
+//login
 app.post("/api/login/", (req, res) => {
   const { email, password } = req.body;
   let user = users.find((u) => u.email === email);
